@@ -1,0 +1,42 @@
+$white: #ffffff;
+$color_shark: #242424;
+
+.navbar-header {
+  //background: #202020;
+  .brand-logo {
+    border: 1px solid $white;
+    margin-right: 100px;
+    height:50px;
+    width: 50px;
+    transform: rotate(135deg) skew(10deg, 10deg);
+    border-radius: 3px 4px;
+    .text {
+      color: $white;
+      font-weight: 600;
+      font-size: 15px;
+      transform: rotate(-135deg) translate(-8px, -10px);
+      text-align: center;
+    }
+  }
+  .nav-content {
+    text-transform: uppercase;
+    .nav-link {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .nav-item.nav-link.active {
+      text-decoration: underline;
+      color: $white;
+      background-color: inherit;
+    }
+    .nav-avatar {
+      background: $color_shark;
+      border-radius: 3px;
+      .avatar-img {
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
