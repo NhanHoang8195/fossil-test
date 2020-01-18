@@ -4,17 +4,14 @@ import { Row, Col, Nav, Tab } from 'react-bootstrap';
 import {faAngleLeft} from '@fortawesome/free-solid-svg-icons';
 import Confirm from './confirm';
 import Process from './process';
-import Waiting from './waiting';
-import Payment from './payment';
-import Success from './success';
 import './styles.scss';
 
 const tabItems = [
   {eventKey: 'confirm', title: 'CONFIRM', content: Confirm},
   {eventKey: 'process', title: 'PROCESS', content: Process},
-  {eventKey: 'waiting', title: 'WAITING', content: Waiting},
-  {eventKey: 'payment', title: 'PAYMENT', content: Payment},
-  {eventKey: 'success', title: 'SUCCESS', content: Success},
+  {eventKey: 'waiting', title: 'WAITING', content: Process},
+  {eventKey: 'payment', title: 'PAYMENT', content: Process},
+  {eventKey: 'success', title: 'SUCCESS', content: Process},
 ];
 
 function OrderContainer(props) {
