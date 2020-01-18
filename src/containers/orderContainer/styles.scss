@@ -17,6 +17,11 @@
       .nav-link.active {
         background-color: black;
       }
+      .nav-link {
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
 }

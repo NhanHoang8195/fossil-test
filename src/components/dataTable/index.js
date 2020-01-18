@@ -13,6 +13,7 @@ function DataTable(props) {
         data={data}
         columns={columns}
         headerClasses="header-table"
+        rowClasses="body-row-table"
       />
   </div>);
 }

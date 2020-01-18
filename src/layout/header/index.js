@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import avatar from '../../image/avatar.jpg';
@@ -16,6 +16,9 @@ const listNavItems = [
 
 function Header() {
   const [activeUrl, setActiveUrl] = useState(window.location.pathname);
+  useEffect(() => {
+    setActiveUrl(window.location.pathname);
+  }, []);
   const history = useHistory();
   function onSelectItem(eventKey) {
     setActiveUrl(eventKey);

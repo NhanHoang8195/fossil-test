@@ -2,5 +2,6 @@
   .body-layout {
     padding: 0 300px;
     text-align: center;
+    min-height: calc(100vh - 200px);
   }
 }

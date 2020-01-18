@@ -5,4 +5,18 @@
       font-weight: 600;
     }
   }
+  .data-table-common {
+    .body-row-table {
+      .col-name {
+        padding: 0 20px;
+        .name {
+          margin: 0;
+          font-weight: bold;
+        }
+        .level {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
