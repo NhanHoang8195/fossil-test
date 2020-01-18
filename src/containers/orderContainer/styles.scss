@@ -1,0 +1,22 @@
+.order-container {
+  .order-container-header {
+    margin-bottom: 30px;
+  }
+  .order-container-body {
+    text-align: left;
+    .body-header {
+      margin: 20px 0;
+      .back-btn {
+        svg {
+          font-size: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .flex-column {
+      .nav-link.active {
+        background-color: black;
+      }
+    }
+  }
+}
