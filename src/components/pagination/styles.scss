@@ -1,0 +1,20 @@
+.pagination-custom {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  .total-records {
+    margin: 0;
+  }
+  .pagination-content {
+    margin-left: auto;
+    margin-bottom: 0;
+    .page-item.active {
+      .page-link {
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+  }
+}
