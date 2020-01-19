@@ -1,13 +1,11 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Redirect , Switch } from 'react-router-dom';
 import LayoutWrapper from '../layout';
 import OrderContainer from './orderContainer';
 import HomeContainer from './homeContainer';
 
-function App({ store }) {
-  return (<Provider store={store}>
-      <Router>
+function App() {
+  return (<Router>
         <LayoutWrapper>
           <Switch>
             <Route exact path="/"><Redirect to="/order" /></Route>
@@ -20,8 +18,7 @@ function App({ store }) {
             <Route exact path="/profile" component={HomeContainer} />
           </Switch>
         </LayoutWrapper>
-      </Router>
-  </Provider>);
+      </Router>);
 }
 
 export default App;

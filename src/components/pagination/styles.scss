@@ -5,16 +5,32 @@
   .total-records {
     margin: 0;
   }
-  .pagination-content {
+  .pagination-container {
     margin-left: auto;
     margin-bottom: 0;
-    .page-item.active {
-      .page-link {
-        background-color: black;
-        color: white;
-        border-radius: 50%;
+    .previous, .next {
+      .force-page-btn {
         border: none;
+        outline: none;
       }
+    }
+    .pagination-item {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+      a {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .active {
+      background-color: black;
+      color: white;
+      border-radius: 50%;
     }
   }
 }

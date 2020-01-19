@@ -1,68 +1,70 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Setup and run FOSSIL-TEST app
+After clone this repo to your local machine, do following steps to run this app:   
+Run following commands:   
 
-In the project directory, you can run:
+`cd fossil-test`   
+`npm install`   
+`npm start`   
 
-### `npm start`
+After finished all of the commands above, you can open any browsers and
+access to http://localhost:3000/order to book a ticket of cinema.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+What i have done this test:
+ + Implement UI same with mockup.
+ + Use [react-bootstrap-table-2](https://react-bootstrap-table.github.io/react-bootstrap-table2/) library to display table
+ + Use mockdata json file to mock data display in table (static load, not silmulate api call)
+ + Pagination use [react-pagination](https://www.npmjs.com/package/react-paginate) library. All page is the same data. Static load
+ + The ideal for display table is each click on pagination, make a call api to  server to fetch data for each page.
+ + Use [redux-router-dom](https://reacttraining.com/react-router/web/guides/quick-start) for routing.
+ + Use [react-bootstrap](https://react-bootstrap.github.io/) for convention.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You can review quickly throught these files in order:
+src/index.js => src/containers/home/App.js.
 
-### `npm test`
+Structure for this project.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+src/   
+  ├──components/  
+  |    ├──dataTable/   
+  |    |     ├──index.js   
+  |    |     └──styles.scss   
+  |    └──pagination/   
+  |          ├──index.js   
+  |          └──styles.scss   
+  |
+  ├──containers/   
+  |    ├──homeConatainer/
+  |    |     ├──index.js   
+  |    |     └──styles.scss   
+  |    ├──orderContainer/   
+  |    |    ├──confirm/   
+  |    |    |     ├──column.js   
+  |    |    |     ├──index.js   
+  |    |    |     └──styles.scss   
+  |    |    ├──process/   
+  |    |    |     ├──index.js   
+  |    |    |     └──styles.scss   
+  |    |    ├──index.js           
+  |    |    └──styles.scss    
+  |    └──App.js   
+  |
+  ├──image/   
+  |    └──avatar.jpg   
+  ├──layout/   
+  |    ├──footer/
+  |    |     ├──index.js   
+  |    |     └──styles.scss   
+  |    ├──header/
+  |    |     ├──index.js   
+  |    |     └──styles.scss   
+  |    ├──index.js   
+  |    └──styles.scss   
+  ├──mockData/   
+  |    └──dataTable.json   
+  ├──util/   
+  |    └──index.js   
+  ├──styles.scss   
+  ├──index.js   
+  └── serviceWorker.js

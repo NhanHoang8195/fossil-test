@@ -7,6 +7,9 @@
     .body-header {
       margin: 20px 0;
       .back-btn {
+        &:hover {
+          cursor: pointer;
+        }
         svg {
           font-size: 15px;
           margin-right: 5px;
