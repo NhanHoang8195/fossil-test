@@ -4,12 +4,12 @@ Setup and run FOSSIL-TEST app
 After clone this repo to your local machine, do following steps to run this app:   
 Run following commands:   
 
-`cd fossil-test`   
-`npm install`   
-`npm start`   
+1. `cd fossil-test`   
+2. `npm install`   
+3. `npm start`   
 
 After finished all of the commands above, you can open any browsers and
-access to http://localhost:3000/order to book a ticket of cinema.
+access to http://localhost:3000/order to visit the app.
 
 What i have done this test:
  + Implement UI same with mockup.
